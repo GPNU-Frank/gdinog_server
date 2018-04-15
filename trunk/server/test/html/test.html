@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+
+        测试
+    </title>
+
+</head>
+<body  div.editpad#iPad>
+<ul class="hello">
+    <li><span>good job</span><a href="">hello world</a></li>
+    <li><span>good job</span><a href="">hello world</a></li>
+    <li><span>good job</span><a href="">hello world</a></li>
+    <li><span>good job</span><a href="">hello world</a></li>
+    <li><span>good job</span><a href="">hello world</a></li>
+</ul>>
+
+<h1>addclass测试(OK)</h1>
+<form action="../index.php" method="post" >
+    <input type="hidden" name="function" value="admin" >
+    <input type="hidden" name="action" value="addclass" >
+    <input type="hidden" name="classname" value="软件工程2" >
+    <input type="hidden" name="year" value="2016" >
+    <input type="hidden" name="classnum" value="2" >
+    <input type="submit" value="提交" >
+</form>
+
+<h1>addclasstocourses测试(未OK)</h1>
+<form action="../index.php" method="post" >
+    <input type="hidden" name="function" value="admin" >
+    <input type="hidden" name="action" value="addclasscourses" >
+    <input type="hidden" name="coursesid" value="10" >
+    <input type="hidden" name="year" value="2016" >
+    <input type="hidden" name="classnum" value="2" >
+    <input type="submit" value="提交" >
+</form>
+
+<h1>addcontest_私有测试(ok)</h1>
+<form action="../index.php" method="post" >
+    <input type="hidden" name="function" value="admin" >
+    <input type="hidden" name="action" value="addcontest" >
+    <input type="hidden" name="title" value="善轩测试" >
+    <input type="hidden" name="startTime" value="2015-05-19 14:00:00" >
+    <input type="hidden" name="stopTime" value="2015-05-19 14:00:00" >
+    <input type="hidden" name="description" value="描述" >
+    <input type="hidden" name="private" value="1" >
+    <input type="hidden" name="password" value="123" >
+    <input type="submit" value="提交" >
+</form>
+
+<h1>addcontest_共有测试(ok)</h1>
+<form action="../index.php" method="post" >
+    <input type="hidden" name="function" value="admin" >
+    <input type="hidden" name="action" value="addcontest" >
+    <input type="hidden" name="title" value="善轩测试" >
+    <input type="hidden" name="startTime" value="2015-05-19 14:00:00" >
+    <input type="hidden" name="stopTime" value="2015-05-19 14:00:00" >
+    <input type="hidden" name="description" value="描述" >
+    <input type="hidden" name="private" value="0" >
+    <input type="submit" value="提交" >
+</form>
+
+<h1>addcourses测试(ok)</h1>
+<form action="../index.php" method="post" >
+    <input type="hidden" name="function" value="admin" >
+    <input type="hidden" name="action" value="addcourses" >
+    <input type="hidden" name="coursename" value="算法与数据结构" >
+    <input type="hidden" name="year" value="2016" >
+    <input type="hidden" name="term" value="1" >
+    <input type="hidden" name="teacherid" value="1" >
+    <input type="submit" value="提交" >
+</form>
+
+
+<h1>addexam测试(ok)</h1>
+<form action="../index.php" method="post" >
+    <input type="hidden" name="function" value="admin" >
+    <input type="hidden" name="action" value="addexam" >
+    <input type="hidden" name="examname" value="算法与数据结构测验" >
+    <input type="hidden" name="coursesid" value="1" >
+    <input type="hidden" name="stoptime" value="2015-05-19 14:00:00" >
+    <input type="submit" value="提交" >
+</form>
+
+<h1>测试增加填空题(ok)</h1>
+<form action="../index.php" method="post" >
+    <input type="hidden" name="function" value="admin" >
+    <input type="hidden" name="action" value="addproblem" >
+    <input type="hidden" name="ProType" value="1" >
+    <input type="hidden" name="Title" value="人人推广" >
+    <input type="hidden" name="ProblemInfo" value="输出1+1=多少" >
+    <input type="hidden" name="Ans" value="2" >
+    <input type="submit" value="提交" >
+</form>
+
+<h1>测试增加选择题(ok)<h1>
+<form action="../index.php" method="post" >
+    <input type="hidden" name="function" value="admin" >
+    <input type="hidden" name="action" value="addproblem" >
+    <input type="hidden" name="SelectionType" value="0" >
+    <input type="hidden" name="ProType" value="2" >
+    <input type="hidden" name="SelectionType" value="0" >
+    <input type="hidden" name="Selection" value="11">
+    <input type="hidden" name="ANS" value="A">
+    <input type="hidden" name="Title" value="TEST">
+    <input type="submit" value="提交" >
+</form>
+
+<h1>测试增加代码题_非竞赛(ok)<h1>
+    <form action="../index.php" method="post" >
+        <input type="hidden" name="function" value="admin" >
+        <input type="hidden" name="action" value="addproblem" >
+        <input type="hidden" name="ProType" value="3" >
+        <input type="hidden" name="title" value="过一过" >
+        <input type="hidden" name="time_limit" value="1" >
+        <input type="hidden" name="memory_limit" value="1024" >
+        <input type="hidden" name="description" value="题目描述" >
+        <input type="hidden" name="input" value="1 2 3" >
+        <input type="hidden" name="output" value="1 2 3" >
+        <input type="hidden" name="sample_input" value="1" >
+        <input type="hidden" name="sample_output" value="1" >
+        <input type="hidden" name="hint" value="输入相同，输出相同" >
+        <input type="hidden" name="source" value="善轩" >
+        <input type="hidden" name="spj" value="0" >
+        <input type="submit" value="提交" >
+    </form>
+
+    <h1>测试增加代码题_竞赛(部分ok，有点不行)<h1>
+        <form action="../index.php" method="post" >
+            <input type="hidden" name="function" value="admin" >
+            <input type="hidden" name="action" value="addproblem" >
+            <input type="hidden" name="contestid" value="1004" >
+            <input type="hidden" name="ProType" value="3" >
+            <input type="hidden" name="title" value="过一过" >
+            <input type="hidden" name="time_limit" value="1" >
+            <input type="hidden" name="memory_limit" value="1024" >
+            <input type="hidden" name="description" value="题目描述" >
+            <input type="hidden" name="input" value="1 2 3" >
+            <input type="hidden" name="output" value="1 2 3" >
+            <input type="hidden" name="sample_input" value="1" >
+            <input type="hidden" name="sample_output" value="1" >
+            <input type="hidden" name="hint" value="输入相同，输出相同" >
+            <input type="hidden" name="source" value="善轩" >
+            <input type="hidden" name="spj" value="0" >
+            <input type="submit" value="提交" >
+        </form>
+
+<h1>addstudenttocoures测试(ok)<h1>
+    <form action="../index.php" method="post" >
+        <input type="hidden" name="function" value="admin" >
+        <input type="hidden" name="action" value="addstudenttocourses" >
+        <input type="hidden" name="coursesid" value="1004" >
+        <input type="hidden" name="studentid" value="1005" >
+        <input type="submit" value="提交" >
+    </form>
+
+<h1>addstudenttocoures测试(ok)<h1>
+    <form action="../index.php" method="post" >
+        <input type="hidden" name="function" value="admin" >
+        <input type="hidden" name="action" value="addstudenttocourses" >
+        <input type="hidden" name="coursesid" value="1004" >
+        <input type="hidden" name="studentid" value="1005" >
+        <input type="submit" value="提交" >
+    </form>
+
+<h1>addteachertocourses测试(ok)<h1>
+    <form action="../index.php" method="post" >
+        <input type="hidden" name="function" value="admin" >
+        <input type="hidden" name="action" value="addteachertocourses" >
+        <input type="hidden" name="coursesid" value="1004" >
+        <input type="hidden" name="teacherid" value="1005" >
+        <input type="submit" value="提交" >
+    </form>
+
+<h1>addtest测试(ok)<h1>
+    <form action="../index.php" method="post" >
+        <input type="hidden" name="function" value="admin" >
+        <input type="hidden" name="action" value="addtest" >
+        <input type="hidden" name="testname" value="善轩" >
+        <input type="hidden" name="coursesid" value="1001" >
+        <input type="hidden" name="stoptime" value="2016-06-06 00:00:00" >
+
+        <input type="submit" value="提交" >
+    </form>
+
+<h1>addtest测试(ok)<h1>
+    <form action="../index.php" method="post" >
+        <input type="hidden" name="function" value="admin" >
+        <input type="hidden" name="action" value="addtest" >
+        <input type="hidden" name="testname" value="善轩" >
+        <input type="hidden" name="coursesid" value="1001" >
+        <input type="hidden" name="stoptime" value="2016-06-06 00:00:00" >
+
+        <input type="submit" value="提交" >
+    </form>
+
+    <h1>deleteproblem测试(ok)<h1>
+        <form action="../index.php" method="post" >
+            <input type="hidden" name="function" value="admin" >
+            <input type="hidden" name="action" value="deleteproblem" >
+            <input type="hidden" name="pid" value="1076" >
+            <input type="submit" value="提交" >
+        </form>
+
+
+<h1>getcontestinfo测试(ok)<h1>
+    <form action="../index.php" method="post" >
+        <input type="hidden" name="function" value="admin" >
+        <input type="hidden" name="action" value="getcontestinfo" >
+        <input type="hidden" name="contest_id" value="1004" >
+        <input type="submit" value="提交" >
+    </form>
+
+
+
+<h1>测试getcontestlist(ok)</h1>
+<form action="../index.php" method="post" >
+    <input type="hidden" name="function" value="admin" >
+    <input type="hidden" name="action" value="getcontestlist" >
+    <input type="submit" value="提交" >
+</form>
+
+
+<h1>测试getcoursesinfo(ok)</h1>
+<form action="../index.php" method="post" >
+    <input type="hidden" name="function" value="admin" >
+    <input type="hidden" name="action" value="getcoursesinfo" >
+    <input type="hidden" name="coursesid" value="10" >
+    <input type="submit" value="提交" >
+</form>
+
+    <h1>测试getcoursesstudent(ok)</h1>
+    <form action="../index.php" method="post" >
+        <input type="hidden" name="function" value="admin" >
+        <input type="hidden" name="action" value="getcoursesstudent" >
+        <input type="hidden" name="coursesid" value="3" >
+        <input type="hidden" name="page" value="1" >
+        <input type="hidden" name="pagesize" value="2" >
+        <input type="submit" value="提交" >
+    </form>
+
+    <h1>测试getexaminfo()</h1>
+    <form action="../index.php" method="post" >
+        <input type="hidden" name="function" value="admin" >
+        <input type="hidden" name="action" value="getexaminfo" >
+        <input type="hidden" name="coursesid" value="3" >
+        <input type="hidden" name="page" value="1" >
+        <input type="hidden" name="pagesize" value="2" >
+        <input type="submit" value="提交" >
+    </form>
+
+
+
+
+
+
+
+
+<h1>测试getexamlist</h1>
+<form action="../index.php" method="post">
+    <input type="hidden" name="function" value="admin">
+    <input type="hidden" name="action" value="getexamlist" >
+    <input type="hidden" name="coursesid" value="3" >
+    <input type="submit" value="提交" >
+
+</form>
+
+<h1>测试getexainfo</h1>
+<form action="../index.php" method="post" >
+    <input type="hidden" name="function" value="admin" >
+    <input type="hidden" name="action" value="getexaminfo" >
+    <input type="hidden" name="page" value="1" >
+    <input type="hidden" name="pagesize" value="10" >
+    <input type="hidden" name="examid" value="27" >
+    <input type="submit" value="提交" >
+</form>
+
+<h1>测试getcoursesstudent</h1>
+<form action="../index.php" method="post" >
+    <input type="hidden" name="function" value="admin" >
+    <input type="hidden" name="action" value="getcoursesstudent" >
+    <input type="hidden" name="coursesid" value="3">
+    <input type="hidden" name="page" value="1" >
+    <input type="hidden" name="pagesize" value="10" >
+    <input type="submit" value="提交" >
+
+</form>
+
+<h1>测试getcoursesinfo</h1>
+<form action="../index.php"  method="post">
+    <input type="hidden" name="function" value="admin" >
+    <input type="hidden" name="action" value="getcoursesinfo" >
+    <input type="hidden" name="coursesid" value="3" >
+    <input type="submit" value="提交" >
+
+</form>
+
+<h1>测试getcontestlist</h1>
+<form action="../index.php" method="post">
+    <input type="hidden" name="function" value="admin" >
+    <input type="hidden" name="action" value="getcontestlist" >
+    <input type="submit" value="提交" >
+</form>
+
+<!-- 测试getcontestinfo  -->
+<h1>测试getcontestinfo</h1>
+
+<form action="../index.php" method="post" >
+    <input type="hidden" name="function" value="admin" >
+    <input type="hidden" name="action" value="getcontestinfo" >
+    <input type="hidden" name="contest_id" value="1009" >
+    <input type="submit" value="提交" >
+</form>
+
+<!--
+
+测试addText
+
+http://localhost:63342/GdinOJ/index.php?function=admin&action=addtest&testname=天天exam&coursesid=10&stoptime=2016-05-20 11:59:09&problemarr=["1001","1002"]
+
+-->
+
+
+<!-- 注意的是，problemarr是一个json数组 ; ["1001" , "1002"] -->
+<!-- url : http://localhost:63342/GdinOJ/index.php?function=admin&action=addexam&examname=天天exam&coursesid=10&stoptime=2016-05-20 11:59:09&problemarr=["1001","1002"] -->
+<!-- JSON字符串必须为双引号，下面测试无法使用 -->
+
+<h1>测试增加exam</h1>
+<form action="../index.php" method="post">
+    <input type="hidden" name="function" value="admin" >
+    <input type="hidden" name="action" value="addexam" >
+    <input type="hidden" name="examname" value="天天exam" >
+    <input type="hidden" name="coursesid" value="10" >
+    <input type="hidden" name="stoptime" value="2016-05-20 11:59:09"  >
+    <input type="hidden" name="problemarr" value="['1001','1002']" >
+    <input type="submit" value="提交" >
+</form>
+
+<h1>测试课程</h1>
+<form action="../index.php" method="post">
+    <input type="hidden" name="function" value="admin" >
+    <input type="hidden" name="action" value="addcourses" >
+    <input type="hidden" name="coursename" value="算法设计" >
+    <input type="hidden" name="year" value="2013">
+    <input type="hidden" name="term" value="1" >
+    <input type="hidden" name="teacherid" value="1" >
+    <input type="submit" value="提交" >
+</form>
+
+<h1>测试增加班级</h1>
+<form action="../index.php" method="post" >
+    <input type="hidden" name="function" value="admin" >
+    <input type="hidden" name="action" value="addclass" >
+    <input type="hidden" name="classname"  value="13软件工程" >
+    <input type="hidden" name="classnum" value="2" >
+    <input type="hidden" name="year" value="2013" >
+    <input type="submit" value="提交" >
+</form>
+
+<h1>测试增加题目（非比赛)</h1>
+<form action="../index.php" method="post">
+    <input type="hidden" value="admin" name="function">
+    <input type="hidden" value="addproblem" name="action" >
+    <input type="hidden" name="title" value="小明的疑惑" >
+    <input type="hidden" name="time_limit" value="1000" >
+    <input type="hidden" name="memory_limit" value="65535" >
+    <input type="hidden" name="description" value="题目描述" >
+    <input type="hidden" name="input" value="11" >
+    <input type="hidden" name="output" value="11" >
+    <input type="hidden" name="sample_input" value="11" >
+    <input type="hidden" name="sample_output" value="11" >
+    <input type="hidden" name="hint" value="提示" >
+    <input type="hidden" name="source" value="PKUOJ" >
+    <input type="hidden" name="spj" value="0" >
+    <input type="hidden" name="contestid" value="1001" >
+    <input type="submit" value="提交" >
+</form>
+
+
+
+<h1>测试增加竞赛代码(私有）</h1>
+
+<form action="../index.php" method="post" >
+    <input type="hidden" value="admin"  name="function">
+    <input type="hidden" value="addcontest" name="action" >
+    <input type="hidden" value="ACM初赛" name="title" >
+    <input type="hidden" value="2015-05-20 11:59:09" name="startTime" >
+    <input type="hidden" value="2016-05-20 11:59:09" name="stopTime" >
+    <input type="hidden" value="1" name="private" >
+    <input type="hidden" value="123" name="password" >
+    <p>填写竞赛描述</p>
+    <textarea  name="description" cols="20" rows="20" ></textarea>
+
+    <input type="submit" value="提交" >
+</form>
+
+
+<h1>测试增加竞赛代码(非私有）</h1>
+
+<form action="../index.php" method="post" >
+    <input type="hidden" value="admin"  name="function">
+    <input type="hidden" value="addcontest" name="action" >
+    <input type="hidden" value="ACM初赛" name="title" >
+    <input type="hidden" value="2015-05-20 11:59:09" name="startTime" >
+    <input type="hidden" value="2016-05-20 11:59:09" name="stopTime" >
+    <p>填写竞赛描述</p>
+    <textarea  name="description" cols="20" rows="20" ></textarea>
+    <input type="submit" value="提交" >
+</form>
+
+<h1>测试提交代码(非比赛）</h1>
+
+<textarea id = "sour" name="sour" cols="20" rows="20" ></textarea>
+
+<form action="../index.php" method="post" id="testform">
+    <input type="hidden" value="1001" name="id" >
+    <input type="hidden" value="admin"  name="function">
+    <input type="hidden" value="submitsolution" name="action" >
+    <input type="hidden" value="1" name="user_id">
+    <input type="hidden" value="" name="source" id="source" >
+    <input type="hidden" value="1" name="language" >
+    <input type="button" value="提交" onclick="javascript:Tosubmit();" >
+</form>
+
+<h1>测试提交代码(比赛）</h1>
+
+<textarea id = "sour1" name="sour" cols="20" rows="20" ></textarea>
+
+<form action="../index.php" method="post" id="testform1">
+    <input type="hidden" value="" >
+    <input type="hidden" value="1001" name="id" >
+    <input type="hidden" value="admin"  name="function">
+    <input type="hidden" value="submitsolution" name="action" >
+    <input type="hidden" value="1" name="user_id">
+    <input type="hidden" value="" name="source" id="source1" >
+    <input type="hidden" value="1" name="language" >
+    <input type="button" value="提交" onclick="javascript:Tosubmit();" >
+</form>
+
+
+<!--
+
+<form action="../index.php" method="post" >
+    <input type="hidden" name="function" value="admin" >
+    <input type="hidden" name="action" value="gettestlist" >
+    <input type="hidden" name="courses_id" value="3">
+    <input type="submit" value="提交" >
+
+</form>
+-->
+
+</body>
+
+<script type="text/javascript">
+    function Tosubmit()
+    {
+        $area = document.getElementById("sour").value ;
+        document.getElementById("source").setAttribute("value" , $area) ;
+        document.getElementById("testform").submit();
+
+    }
+</script>
+
+</html>

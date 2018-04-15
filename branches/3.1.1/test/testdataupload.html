@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form action="../?action=manager.problem.gettestdata" method="post"
+          enctype="multipart/form-data"  >
+        <input  type="text" name="pid" > <br>
+        <input  type="text" name="cookie" > <br>
+        <input type="file" name="inputfile[]" multiple >
+        <input type="file" name="outputfile[]" multiple >
+        <button type="submit">提交</button>
+    </form>
+
+</body>
+</html>
